@@ -27,8 +27,8 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "../../apps/nx-nextjs-latest-sample/.next/types/**/*.ts",
-    "../../dist/apps/nx-nextjs-latest-sample/.next/types/**/*.ts",
+    ".next/types/**/*.ts",
+    "../../dist/apps/user-pc-web/.next/types/**/*.ts",
     "next-env.d.ts"
   ],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
