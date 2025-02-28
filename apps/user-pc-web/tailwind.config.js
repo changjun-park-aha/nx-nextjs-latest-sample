@@ -1,6 +1,7 @@
 import { createGlobPatternsForDependencies } from '@nx/react/tailwind';
 import { join } from 'path';
 import typography from '@tailwindcss/typography';
+import animate from 'tailwindcss-animate';
 
 /** @type {import('tailwindcss').Config} */
 export const content = [
@@ -13,4 +14,4 @@ export const content = [
 export const theme = {
   extend: {},
 };
-export const plugins = [typography];
+export const plugins = [typography, animate];
