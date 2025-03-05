@@ -1,0 +1,19 @@
+{
+  "name": "date",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/date/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/date",
+        "main": "libs/date/src/index.ts",
+        "tsConfig": "libs/date/tsconfig.lib.json",
+        "assets": ["libs/date/*.md"]
+      }
+    }
+  }
+}

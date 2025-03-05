@@ -1,0 +1,19 @@
+{
+  "name": "units",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/units/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/units",
+        "main": "libs/units/src/index.ts",
+        "tsConfig": "libs/units/tsconfig.lib.json",
+        "assets": ["libs/units/*.md"]
+      }
+    }
+  }
+}

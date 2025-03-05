@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-nextjs-latest-sample/comps": ["common/comps/src/index.ts"],
+      "@nx-nextjs-latest-sample/comps/server": ["common/comps/src/server.ts"],
+      "@nx-nextjs-latest-sample/date": ["libs/date/src/index.ts"],
+      "@nx-nextjs-latest-sample/layouts": ["common/layouts/src/index.ts"],
+      "@nx-nextjs-latest-sample/layouts/server": [
+        "common/layouts/src/server.ts"
+      ],
+      "@nx-nextjs-latest-sample/units": ["libs/units/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
